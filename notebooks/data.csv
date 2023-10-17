@@ -1,0 +1,4 @@
+,table_name,no_of_observations,no_of_variables
+0,MSEG_CUSTOMER_data.csv,5000,16
+1,test_data.csv,3000,10
+2,train_data.csv,5000,10
