@@ -8,7 +8,7 @@ from utils import (calculate_numeric_column_attributes,
                    calculate_date_description_statistics,
                    dup_data_description)
 from gen_visulizations import create_visualizations_and_report,generate_vislizations
-
+from recommendations import data_quality_recommendations
 
 def snowflake_ui_connection():
     st.title("Snowflake Database Connector")
@@ -64,7 +64,8 @@ def snowflake_ui_connection():
                         cur.execute(query)
                         df = pd.read_sql(query, conn)
                         st.write(df.head())
-                        generate_vislizations(df)
+                        # generate_vislizations(df)
+                        data_quality_recommendations(df)
                         tab_names.append(table_name)
                         tab_obs.append(dup_data_description(df, table_name)[0])
                         for k,_ in dup_data_description(df, table_name)[1].items():

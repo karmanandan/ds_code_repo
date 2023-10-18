@@ -10,7 +10,6 @@ from utils import (calculate_numeric_column_attributes,
 from snowflake_ui import snowflake_ui_connection
 from local_ui import local_ui_connection
 
-
 conn_type = st.radio(
     "How do you want to connect",
     ["Snowflake", "Local Directory"],

@@ -6,11 +6,15 @@ import pandas as pd
 import tkinter as tk
 from tkinter import filedialog
 from gen_visulizations import create_visualizations_and_report,generate_vislizations
+from recommendations import data_quality_recommendations
 
 from utils import (calculate_numeric_column_attributes,
                    calculate_categorical_column_attributes,
                    calculate_date_description_statistics,
                    dup_data_description)
+
+
+
 
 def local_ui_connection():
     st.title("Database Connector")
@@ -27,7 +31,9 @@ def local_ui_connection():
                     path_ = os.path.join(local_dir, table_name)
                     df = pd.read_csv(path_)
                     st.write(df.head())
-                    generate_vislizations(df)
+                    # generate_vislizations(df)
+                    recom_results = data_quality_recommendations(df)
+                    st.write(recom_results)
                     tab_names.append(table_name)
                     tab_obs.append(dup_data_description(df, table_name)[0])
                     ####
