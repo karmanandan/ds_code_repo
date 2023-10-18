@@ -9,11 +9,11 @@
     4.1 Snowflake
     4.2 Local Directory
 
-4.1 Snowflake
-    # Provide all the required valid information to connect the Snowflake database
-    # click on *Download Statistical Report*
+    4.1 Snowflake
+        # Provide all the required valid information to connect the Snowflake database
+        # click on *Download Statistical Report*
 
 
-4.2 Local Directory
-    # Provide valid data directory path
-    # click on *Download Statistical Report*
+    4.2 Local Directory
+        # Provide valid data directory path
+            # click on *Download Statistical Report*
