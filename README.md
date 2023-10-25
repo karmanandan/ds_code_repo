@@ -1,12 +1,14 @@
 # ds_code_repo
 **Follow the steps**
 1. Create a virtual environment
-
-    *!pip install virtualenv
-    *!python -m venv <virtula_env_name>
+    ##
+    !pip install virtualenv
+    ##
+    !python -m venv <virtula_env_name>
 
 2. install required libraries
-    *!pip install -r requirements.txt
+    ##
+    !pip install -r requirements.txt
 3. Run the streamlit appplication
     streamlit run code\app.py
 4. Select any one option on the screen
